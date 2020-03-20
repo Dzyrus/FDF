@@ -6,6 +6,10 @@
 
 #IncludeRegexTransform: 
 
+/Users/Daria/Desktop/21sch/FDF/draw.c
+fdf.h
+/Users/Daria/Desktop/21sch/FDF/fdf.h
+
 /Users/Daria/Desktop/21sch/FDF/fdf.h
 ./libft/libft.h
 /Users/Daria/Desktop/21sch/FDF/libft/libft.h
