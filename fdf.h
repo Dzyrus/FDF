@@ -18,9 +18,12 @@ typedef struct
     int x;
     int y;
     int **z_values;
+    int zoom;
+    int color;
 
 }               t_fdf;
 
 void    read_file(char *file, t_fdf *fdf);
 void draw_line(float x, float y, float x1, float y1, t_fdf *fdf);
+void draw_map(t_fdf *fdf);
 #endif //FDF_FDF_H

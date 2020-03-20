@@ -9,6 +9,8 @@
 /Users/Daria/Desktop/21sch/FDF/draw.c
 fdf.h
 /Users/Daria/Desktop/21sch/FDF/fdf.h
+math.h
+-
 
 /Users/Daria/Desktop/21sch/FDF/fdf.h
 ./libft/libft.h
@@ -29,10 +31,6 @@ stdarg.h
 -
 wchar.h
 -
-
-/Users/Daria/Desktop/21sch/FDF/main.c
-fdf.h
-/Users/Daria/Desktop/21sch/FDF/fdf.h
 
 /Users/Daria/Desktop/21sch/FDF/minilibx_macos/mlx.h
 
