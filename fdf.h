@@ -5,11 +5,10 @@
 #ifndef FDF_FDF_H
 #define FDF_FDF_H
 
-#include <math.h>
 #include "./libft/libft.h"
 #include "./minilibx_macos/mlx.h"
 
-//gcc main.c fdf.h ./libft/libft.a ./minilibx/libmlx_intel-mac.a  -framework OpenGL -framework AppKit
+//gcc main.c fdf.h ./libft/libft.a ./minilibx_macos/libmlx.a  -framework OpenGL -framework AppKit
 
 typedef struct
 {
@@ -23,4 +22,5 @@ typedef struct
 }               t_fdf;
 
 void    read_file(char *file, t_fdf *fdf);
+void draw_line(float x, float y, float x1, float y1, t_fdf *fdf);
 #endif //FDF_FDF_H

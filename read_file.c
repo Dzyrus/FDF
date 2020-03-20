@@ -31,7 +31,6 @@ int get_y_value(char *file)
         y++;
         free(line);
     }
-    free(line);
     close(fd);
     return (y);
 }
@@ -46,11 +45,12 @@ void fill_z(int *z_values, char *line)
     while (values[i])
     {
         z_values[i] = ft_atoi(values[i]);
-        free(line);
+        free(values[i]);
         i++;
     }
     free(values);
 }
+
 void    read_file(char *file, t_fdf *fdf)
 {
     int fd;
