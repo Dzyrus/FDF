@@ -74,12 +74,12 @@ preinstall:
 CMakeFiles/FDF.dir/all:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/depend
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Daria/Desktop/21sch/FDF/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4 "Built target FDF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/Daria/Desktop/21sch/FDF/cmake-build-debug/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target FDF"
 .PHONY : CMakeFiles/FDF.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/FDF.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Daria/Desktop/21sch/FDF/cmake-build-debug/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Daria/Desktop/21sch/FDF/cmake-build-debug/CMakeFiles 6
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/FDF.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/Daria/Desktop/21sch/FDF/cmake-build-debug/CMakeFiles 0
 .PHONY : CMakeFiles/FDF.dir/rule

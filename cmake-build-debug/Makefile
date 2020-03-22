@@ -177,6 +177,60 @@ main.c.s:
 	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/main.c.s
 .PHONY : main.c.s
 
+menu.o: menu.c.o
+
+.PHONY : menu.o
+
+# target to build an object file
+menu.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/menu.c.o
+.PHONY : menu.c.o
+
+menu.i: menu.c.i
+
+.PHONY : menu.i
+
+# target to preprocess a source file
+menu.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/menu.c.i
+.PHONY : menu.c.i
+
+menu.s: menu.c.s
+
+.PHONY : menu.s
+
+# target to generate assembly for a file
+menu.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/menu.c.s
+.PHONY : menu.c.s
+
+options.o: options.c.o
+
+.PHONY : options.o
+
+# target to build an object file
+options.c.o:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/options.c.o
+.PHONY : options.c.o
+
+options.i: options.c.i
+
+.PHONY : options.i
+
+# target to preprocess a source file
+options.c.i:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/options.c.i
+.PHONY : options.c.i
+
+options.s: options.c.s
+
+.PHONY : options.s
+
+# target to generate assembly for a file
+options.c.s:
+	$(MAKE) -f CMakeFiles/FDF.dir/build.make CMakeFiles/FDF.dir/options.c.s
+.PHONY : options.c.s
+
 read_file.o: read_file.c.o
 
 .PHONY : read_file.o
@@ -219,6 +273,12 @@ help:
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
+	@echo "... menu.o"
+	@echo "... menu.i"
+	@echo "... menu.s"
+	@echo "... options.o"
+	@echo "... options.i"
+	@echo "... options.s"
 	@echo "... read_file.o"
 	@echo "... read_file.i"
 	@echo "... read_file.s"

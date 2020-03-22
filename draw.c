@@ -37,12 +37,21 @@ void draw_line(float x, float y, float x1, float y1, t_fdf *fdf)
     y *= (float)(fdf->zoom);
     y1 *= (float)(fdf->zoom);
 
+    fdf->color = (z || z1) ? 0xe80c0c : 0xffffff;
+    if (fdf->iso > 0)
+    {
+        isometric(&x, &y, z);
+        isometric(&x1, &y1, z1);
+    }
+
+    x += fdf->win_x / 3 + fdf->x_offset;
+    x1 += fdf->win_x / 3 + fdf->x_offset;
+    y += fdf->win_y / 2 + fdf->y_offset;
+    y1 += fdf->win_y / 2 + fdf->y_offset;
+
     y_step = y1 - y;
     x_step = x1 - x;
-    //isometric(&x, &y, z);
-    //isometric(&x1, &y1, z1);
     max = maximum(mod(y_step), mod(x_step));
-    fdf->color = (z) ? 0xe80c0c : 0xffffff;
     y_step /= max;
     x_step /= max;
     while((int)(x1 - x) || (int)(y1 - y))

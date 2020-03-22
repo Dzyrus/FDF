@@ -90,7 +90,13 @@
 		<Unit filename="/Users/Daria/Desktop/21sch/FDF/main.c">
 			<Option target="FDF"/>
 		</Unit>
+		<Unit filename="/Users/Daria/Desktop/21sch/FDF/menu.c">
+			<Option target="FDF"/>
+		</Unit>
 		<Unit filename="/Users/Daria/Desktop/21sch/FDF/minilibx_macos/mlx.h">
+			<Option target="FDF"/>
+		</Unit>
+		<Unit filename="/Users/Daria/Desktop/21sch/FDF/options.c">
 			<Option target="FDF"/>
 		</Unit>
 		<Unit filename="/Users/Daria/Desktop/21sch/FDF/read_file.c">

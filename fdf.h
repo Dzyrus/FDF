@@ -14,16 +14,21 @@ typedef struct
 {
     void *mlx_ptr;
     void *win_ptr;
-
+    float win_x;
+    float win_y;
     int x;
     int y;
     int **z_values;
     int zoom;
     int color;
-
+    int iso;
+    float x_offset;
+    float y_offset;
 }               t_fdf;
 
 void    read_file(char *file, t_fdf *fdf);
 void draw_line(float x, float y, float x1, float y1, t_fdf *fdf);
 void draw_map(t_fdf *fdf);
+void print_menu(t_fdf *fdf);
+void reset(t_fdf *fdf);
 #endif //FDF_FDF_H

@@ -11,6 +11,16 @@ CMakeFiles/FDF.dir/main.c.o
  /Users/Daria/Desktop/21sch/FDF/libft/libft.h
  /Users/Daria/Desktop/21sch/FDF/main.c
  /Users/Daria/Desktop/21sch/FDF/minilibx_macos/mlx.h
+CMakeFiles/FDF.dir/menu.c.o
+ /Users/Daria/Desktop/21sch/FDF/fdf.h
+ /Users/Daria/Desktop/21sch/FDF/libft/libft.h
+ /Users/Daria/Desktop/21sch/FDF/menu.c
+ /Users/Daria/Desktop/21sch/FDF/minilibx_macos/mlx.h
+CMakeFiles/FDF.dir/options.c.o
+ /Users/Daria/Desktop/21sch/FDF/fdf.h
+ /Users/Daria/Desktop/21sch/FDF/libft/libft.h
+ /Users/Daria/Desktop/21sch/FDF/minilibx_macos/mlx.h
+ /Users/Daria/Desktop/21sch/FDF/options.c
 CMakeFiles/FDF.dir/read_file.c.o
  /Users/Daria/Desktop/21sch/FDF/fdf.h
  /Users/Daria/Desktop/21sch/FDF/libft/libft.h
