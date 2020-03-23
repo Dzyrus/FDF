@@ -3,57 +3,41 @@
 //
 
 #include "fdf.h"
-#include <math.h>
 
-float maximum(float a, float b)
+void isometric(float *x, float *y, int z, t_fdf *fdf)
 {
-    return (a > b ? a : b);
+    *x = (*x - *y) * cos(fdf->angle);
+    *y = (*x + *y) * sin(fdf->angle) - z;
 }
 
-float mod(float a)
+void zoom(float *x, float *y, int *z, t_fdf  *fdf)
 {
-    return (a > 0 ? a : -a);
-}
-
-void isometric(float *x, float *y, int z)
-{
-    *x = (*x - *y) * cos(0.523599);
-    *y = (*x + *y) * sin(0.523599) - z;
+    *z = fdf->z_values[(int)*y][(int)*x];
+    *x *= (float)(fdf->zoom);
+    *y *= (float)(fdf->zoom);
+    *z *= fdf->z_scale;
 }
 
 void draw_line(float x, float y, float x1, float y1, t_fdf *fdf)
 {
     float y_step;
     float x_step;
-    float max;
     int z;
     int z1;
 
-    z = fdf->z_values[(int)y][(int)x];
-    z1 = fdf->z_values[(int)y1][(int)x1];
-
-    x *= (float)(fdf->zoom);
-    x1 *= (float)(fdf->zoom);
-    y *= (float)(fdf->zoom);
-    y1 *= (float)(fdf->zoom);
-
+    zoom(&x, &y, &z, fdf);
+    zoom(&x1, &y1, &z1, fdf);
     fdf->color = (z || z1) ? 0xe80c0c : 0xffffff;
     if (fdf->iso > 0)
     {
-        isometric(&x, &y, z);
-        isometric(&x1, &y1, z1);
+        isometric(&x, &y, z, fdf);
+        isometric(&x1, &y1, z1, fdf);
     }
-
-    x += fdf->win_x / 3 + fdf->x_offset;
-    x1 += fdf->win_x / 3 + fdf->x_offset;
-    y += fdf->win_y / 2 + fdf->y_offset;
-    y1 += fdf->win_y / 2 + fdf->y_offset;
-
+    shift(&x, &y, fdf);
+    shift(&x1, &y1, fdf);
     y_step = y1 - y;
     x_step = x1 - x;
-    max = maximum(mod(y_step), mod(x_step));
-    y_step /= max;
-    x_step /= max;
+    get_step(&x_step, &y_step);
     while((int)(x1 - x) || (int)(y1 - y))
     {
         mlx_pixel_put(fdf->mlx_ptr, fdf->win_ptr, (int)x, (int)y, fdf->color);

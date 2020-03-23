@@ -6,11 +6,17 @@
 
 #IncludeRegexTransform: 
 
+/Users/Daria/Desktop/21sch/FDF/draw.c
+fdf.h
+/Users/Daria/Desktop/21sch/FDF/fdf.h
+
 /Users/Daria/Desktop/21sch/FDF/fdf.h
 ./libft/libft.h
 /Users/Daria/Desktop/21sch/FDF/libft/libft.h
 ./minilibx_macos/mlx.h
 /Users/Daria/Desktop/21sch/FDF/minilibx_macos/mlx.h
+math.h
+-
 
 /Users/Daria/Desktop/21sch/FDF/libft/libft.h
 unistd.h
@@ -30,5 +36,17 @@ wchar.h
 fdf.h
 /Users/Daria/Desktop/21sch/FDF/fdf.h
 
+/Users/Daria/Desktop/21sch/FDF/menu.c
+fdf.h
+/Users/Daria/Desktop/21sch/FDF/fdf.h
+
 /Users/Daria/Desktop/21sch/FDF/minilibx_macos/mlx.h
+
+/Users/Daria/Desktop/21sch/FDF/options.c
+fdf.h
+/Users/Daria/Desktop/21sch/FDF/fdf.h
+
+/Users/Daria/Desktop/21sch/FDF/read_file.c
+fdf.h
+/Users/Daria/Desktop/21sch/FDF/fdf.h
 
